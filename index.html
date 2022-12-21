@@ -102,10 +102,26 @@
         <h2 class="title sign__title">Записаться</h2>
         <p class="sign__text">укажите желаемую дату и время и мы свяжемся
           с вами для подтверждения брони</p>
-        <form action="#" class="sign__form">
-          <!-- Добавлю позже -->
+        <form class="sign__form" action="#" method="post">
+          <p class="sign__date">
+            <label for="sign-date">Дата</label>
+            <input id="sign-date" type="date" value="2017-10-08" name="date">
+          </p>
+          <p class="sign__time">
+            <label for="sign-time">Время</label>
+            <input id="sign-time" type="time" value="10:00" name="time">
+          </p>
+          <p class="sign__name">
+            <label for="sign-name">Ваше имя</label>
+            <input id="sign-name" type="text" value="" placeholder="Аркадий" name="name">
+          </p>
+          <p class="sign__phone">
+            <label for="sign-phone">Телефон</label>
+            <input id="sign-phone" type="tel" value="" placeholder="+7 999 999 99 99" name="phone">
+          </p>
+          
         </form>
-        <button class="sign__button">Отправить</button>
+        <button class="sign__button" type="submit">Отправить</button>
       </section>
     </div>
   </main>
