@@ -38,7 +38,57 @@
 
     <section class="product-filter">
       <h2 class="visually-hidden">Фильтр товаров</h2>
-      <!-- Позже -->
+      <form class="product-filter__form" action="#" method="get">
+        <fieldset>
+          <legend>Производители:</legend>
+          <ul class="product-filter__list-box">
+            <li class="product-filter__item-box">
+              <input type="checkbox" name="Baxter-of-California" id="product-filter-baxter-of-california" checked>
+              <label for="product-filter-baxter-of-california">Baxter of California</label>
+            </li>
+            <li class="product-filter__item-box">
+              <input type="checkbox" name="mr-natty" id="product-filter-mr-natty">
+              <label for="product-filter-mr-natty">mr natty</label>
+            </li>
+            <li class="product-filter__item-box">
+              <input type="checkbox" name="suavecito" id="product-filter-suavecito" >
+              <label for="product-filter-suavecito">Suavecito</label>
+            </li>
+            <li class="product-filter__item-box">
+              <input type="checkbox" name="Malin+Goetz" id="product-filter-Malin-Goetz" >
+              <label for="product-filter-Malin-Goetz">Malin+Goetz</label>
+            </li>
+            <li class="product-filter__item-box">
+              <input type="checkbox" name="Murrays" id="product-filter-Murrays" checked>
+              <label for="product-filter-Murrays">Murray’s</label>
+            </li>
+            <li class="product-filter__item-box">
+              <input type="checkbox" name="American-Crew" id="product-filter-American-Crew" checked>
+              <label for="product-filter-American-Crew">Baxter of California</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Группы товаров:</legend>
+          <ul class="product-filter__list-radio">
+            <li class="product-filter__item-radio">
+              <input type="radio" name="product-filter-radio" value="shaving" id="product-filter__shave">
+              <label for="product-filter__shave">Бритвенные принадлежности</label>
+            </li>
+            <li class="product-filter__item-radio">
+              <input type="radio" name="product-filter-radio" value="care" id="product-filter__care" checked>
+              <label for="product-filter__care">Средства для ухода</label>
+            </li>
+            <li class="product-filter__item-radio">
+              <input type="radio" name="product-filter-radio" value="accessories" id="product-filter__accessories">
+              <label for="product-filter__accessories">Аксессуары</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="product-filter__button button" type="submit">
+          Показать
+        </button>
+      </form>
     </section>
 
     <section class="products">
