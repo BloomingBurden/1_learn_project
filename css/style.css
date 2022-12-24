@@ -1,0 +1,43 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+
+  font-family: "PT Sans Narrow";
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  
+  background-color: #000000;
+  background-image: url('../img/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+}
