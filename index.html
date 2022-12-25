@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,25 +10,28 @@
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <header class="header">
-    <div class="container">
-      <nav class="nav header__nav">
-        <a href="#" class="logo header__logo">
-          <img src="img/index-logo.svg" alt="Логотип Бородинский" width="371" height="153">
-        </a>
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#">Информация</a></li>
-          <li class="nav__item"><a href="#">Новости</a></li>
-          <li class="nav__item"><a href="#">Прайс-лист</a></li>
-          <li class="nav__item"><a href="#">Магазин</a></li>
-          <li class="nav__item"><a href="#">Контакты</a></li>
-        </ul>
-        <div class="enter">
-          <button class="enter__button" type="button">Вход</button>
+    <nav class="nav">
+      <a href="#" class="logo header__logo">
+        <img src="img/index-logo.svg" alt="Логотип Бородинский" width="371" height="153">
+      </a>
+      <div class="header__wrapper">
+        <div class="container">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#">Информация</a></li>
+            <li class="nav__item"><a href="#">Новости</a></li>
+            <li class="nav__item"><a href="#">Прайс-лист</a></li>
+            <li class="nav__item"><a href="#">Магазин</a></li>
+            <li class="nav__item"><a href="#">Контакты</a></li>
+          </ul>
+          <div class="enter">
+            <button class="enter__button" type="button">Вход</button>
+          </div>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
   </header>
 
   <main>
@@ -37,15 +41,18 @@
       <ul class="advantages__list">
         <li class="advantages__item">
           <h2 class="advantages__list-title">Быстро</h2>
-          <p class="advantages__text">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!  </p>
+          <p class="advantages__text">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый
+            обладатель стильной стрижки-минутки! </p>
         </li>
         <li class="advantages__item">
           <h2 class="advantages__list-title">Круто</h2>
-          <p class="advantages__text">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
+          <p class="advantages__text">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во
+            всяком случае внешне.</p>
         </li>
         <li class="advantages__item">
           <h2 class="advantages__list-title">Дорого</h2>
-          <p class="advantages__text">Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена 
+          <p class="advantages__text">Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же,
+            разве цена
             не дает определенный статус? </p>
         </li>
       </ul>
@@ -62,12 +69,13 @@
           </li>
           <li class="news__item">
             <a href="#" class="news__link">
-              <p>В нашей команде пополнение, борис «бритва» стригунец, обладaтель множества титулов и наград пополнил наши стройные ряды</p>
+              <p>В нашей команде пополнение, борис «бритва» стригунец, обладaтель множества титулов и наград пополнил
+                наши стройные ряды</p>
               <time datetime="2022-01-11">11 Января</time>
             </a>
           </li>
         </ul>
-        <a href="#" class="news__button">Все новости</a>
+        <a href="#" class="news__button button">Все новости</a>
       </section>
 
       <section class="photo">
@@ -76,8 +84,8 @@
           <img src="img/photo.jpg" alt="1-фотография" width="330" height="170">
         </div>
         <div class="photo__buttons">
-          <button>Назад</button>
-          <button>Вперед</button>
+          <button class="button">Назад</button>
+          <button class="button">Вперед</button>
         </div>
       </section>
     </div>
@@ -96,8 +104,8 @@
           сб—вс: с 10:00 до 19:00 <br>
         </p>
         <div class="contacts__buttons">
-          <a href="#">Как проехать</a>
-          <a href="#">Обратная связь</a>
+          <a href="#" class="button">Как проехать</a>
+          <a href="#" class="button">Обратная связь</a>
         </div>
       </section>
 
@@ -122,9 +130,9 @@
             <label for="sign-phone">Телефон</label>
             <input id="sign-phone" type="tel" value="" placeholder="+7 999 999 99 99" name="phone">
           </p>
-          
+
         </form>
-        <button class="sign__button" type="submit">Отправить</button>
+        <button class="sign__button button" type="submit">Отправить</button>
       </section>
     </div>
   </main>
@@ -152,4 +160,5 @@
     </p>
   </footer>
 </body>
+
 </html>
