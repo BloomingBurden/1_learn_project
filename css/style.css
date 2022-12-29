@@ -75,6 +75,16 @@ a {
   cursor: pointer;
 }
 
+.title {
+  font-size: 30px;
+  line-height: 42px;
+  color: #000000;
+}
+
+.index-page .header {
+  margin-bottom: 70px;
+}
+
 .nav {
   display: flex;
   flex-direction: column;
@@ -120,7 +130,7 @@ a {
 .nav__list {
   width: 660px;
   display: flex;
-  
+  flex-wrap: wrap;
 }
 
 .enter {
@@ -157,4 +167,44 @@ a {
 .enter__button:active::before {
   opacity: 1;
   transition: 0.2s;
+}
+
+/* ADVANTAGES */
+
+.advantages {
+  text-align: center;
+}
+
+.advantages__list {
+  display: flex;
+  justify-content: space-between;
+}
+.advantages__item {
+  width: 290px;
+  padding: 0 5px;
+}
+.advantages__list-title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 55px;
+  color: #ffffff;
+}
+
+.advantages__list-title::before {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+
+  width: 20px;
+  height: 20px;
+  margin-left: -10px;
+  margin-top: -10px;
+  
+  background-color: #ffffff;
+  transform: rotate(-45deg);
+}
+
+.advantages__text {
+  margin: 0;
 }
