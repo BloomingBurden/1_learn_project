@@ -54,14 +54,14 @@ a {
 }
 
 .container {
-  width: 940px;
+  width: 960px;
   padding: 0 10px;
   margin: 0 auto;
 }
 
 .button {
   display: inline-block;
-  padding: 10px 30px;
+  padding: 10px 35px;
   margin-right: 16px;
 
   font: inherit;
@@ -73,6 +73,14 @@ a {
   background-color: #000000;
   color: #ffffff;
   cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.button:hover,
+.button:active,
+.button:focus {
+  background-color: #663D15;
 }
 
 .title {
@@ -123,6 +131,8 @@ a {
 }
 
 .header__wrapper .container {
+  padding-left: 17px;
+  padding-right: 17px;
   display: flex;
   justify-content: space-between;
 }
@@ -173,6 +183,7 @@ a {
 
 .advantages {
   text-align: center;
+  margin-bottom: 80px;
 }
 
 .advantages__list {
@@ -181,7 +192,7 @@ a {
 }
 .advantages__item {
   width: 290px;
-  padding: 0 5px;
+  padding: 0 10px;
 }
 .advantages__list-title {
   position: relative;
@@ -208,3 +219,52 @@ a {
 .advantages__text {
   margin: 0;
 }
+
+/* NEWS */
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 35px 40px 40px 82px;
+  background-color: #f2f2f2;
+}
+
+.news__title {
+  margin: 0;
+}
+
+.news {
+  width: 380px;
+}
+
+.news__list {
+  margin-bottom: 30px;
+}
+
+.news__item {
+  margin-bottom: 16px;
+}
+
+.news__link {
+  color: #000000;
+}
+
+.news__link:active,
+.news__link:hover,
+.news__link:focus {
+  color: #663D15;
+}
+
+.news__link p {
+  margin: 0;
+  margin-bottom: 7px
+}
+
+.news__item:first-child p {
+  margin-bottom: 30px;
+}
+
+.news__link time {
+  text-transform: none;
+}
+
