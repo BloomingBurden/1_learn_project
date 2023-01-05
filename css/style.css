@@ -93,6 +93,10 @@ a {
   color: #000000;
 }
 
+.index-page main{
+  margin-bottom: 70px;
+}
+
 .index-page .header {
   margin-bottom: 70px;
 }
@@ -372,16 +376,75 @@ a {
   border: 2px solid #000000;
 }
 
-.sign__date {
-}
-.sign__time {
-}
-.sign__name {
-}
-.sign__phone {
-}
 .sign__button {
   width: 100%;
 }
-.button {
+
+.main-foot {
+  width: 100%;
+  padding: 55px 0 40px 0;
+  background-color: #232323;
+}
+
+.main-foot .container {
+  display: flex;
+}
+
+.main-foot__address {
+  margin: 0;
+  width: 310px;
+  margin-right: 95px;
+}
+.main-foot__social {
+  width: 140px;
+  text-align: center;
+}
+
+.main-foot__social p{
+  margin: 0px;
+  margin-bottom: 15px;
+}
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.social__item a {
+  width: 43px;
+  height: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #000000;
+  transition: 0.3s;
+}
+
+.social__item:hover a,
+.social__item:active a,
+.social__item:focus a {
+  background-color: #ffffff;
+}
+
+.social__item:hover path,
+.social__item:active path,
+.social__item:focus path {
+  fill: #000000;
+  transition: 0.3s;
+}
+
+.main-foot__made {
+  margin: 0;
+}
+
+.main-foot__made {
+  text-align: center;
+  margin-left: auto;
+}
+
+.main-foot__made span {
+  display: block;
+  margin-bottom: 13px;
 }
