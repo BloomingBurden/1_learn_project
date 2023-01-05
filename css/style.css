@@ -61,7 +61,7 @@ a {
 
 .button {
   display: inline-block;
-  padding: 10px 35px;
+  padding: 10px 30px;
   margin-right: 16px;
 
   font: inherit;
@@ -229,7 +229,8 @@ a {
 .wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 35px 78px 40px 82px;
+  padding: 35px 78px 48px 82px;
+  margin-bottom: 35px;
   background-color: #f2f2f2;
 }
 
@@ -304,6 +305,83 @@ a {
   display: flex;
   justify-content: space-between;
 }
-.button {
+.photo__buttons .button {
   flex-grow: 1;
+}
+
+/* CONTACTS */
+
+.contacts {
+  width: 380px;
+  color: #000000;
+}
+
+.contacts__title {
+  margin: 0;
+  margin-bottom: 25px;
+}
+.contacts__address {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.contacts__time {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.sign {
+  width: 298px;
+  color: #000000;
+}
+
+.sign__title {
+  margin: 0;
+  margin-bottom: 30px;
+}
+.sign__text {
+  margin: 0;
+  margin-bottom: 10px;
+}
+.sign__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 11px;
+}
+
+.sign__form p {
+  margin: 0;
+  margin-bottom: 8px;
+  width: 140px;
+}
+
+.sign__form label {
+  display: block;
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+
+.sign__form input {
+  width: 140px;
+  padding: 7px 14px;
+  
+  font: inherit;
+
+  background-color: transparent;
+  border: 2px solid #000000;
+}
+
+.sign__date {
+}
+.sign__time {
+}
+.sign__name {
+}
+.sign__phone {
+}
+.sign__button {
+  width: 100%;
+}
+.button {
 }
