@@ -2,15 +2,15 @@
 
 
 // Попап на сайте
-class Popup {
+class Carousel {
     constructor(elem) {
         this._elem = elem;
-        this._popup = document.querySelector('[data-popup]');
-        this.length = this._popup.children.length;
-        this.elemWidth = this._popup.children[0].clientWidth;
+        this._carousel = document.querySelector('[data-carousel]');
+        this.length = this._carousel.children.length;
+        this.elemWidth = this._carousel.children[0].clientWidth;
         this.position = 0;
 
-        this._popup.style.width = this.length * this.elemWidth + 'px';
+        this._carousel.style.width = this.length * this.elemWidth + 'px';
 
         elem.addEventListener('click', (e) => {
             this.onClick(e);
@@ -27,11 +27,11 @@ class Popup {
             e.target.disabled = true;
         } 
 
-        this._popup.style.marginLeft = this.position + 'px';
+        this._carousel.style.marginLeft = this.position + 'px';
     }
 
     next(e) {
-        const finishWidthLine = -this._popup.offsetWidth + this.elemWidth;
+        const finishWidthLine = -this._carousel.offsetWidth + this.elemWidth;
         this.position -= this.elemWidth;
         this._elem.querySelector('[data-action="prev"]').disabled = false;
 
@@ -40,7 +40,7 @@ class Popup {
             e.target.disabled = true;
         }
         
-        this._popup.style.marginLeft = this.position + 'px';
+        this._carousel.style.marginLeft = this.position + 'px';
     }
 
     onClick(e) {
@@ -49,4 +49,4 @@ class Popup {
     }
 }
 
-new Popup(document.querySelector('.photo__buttons'));
+new Carousel(document.querySelector('.photo__buttons'));
