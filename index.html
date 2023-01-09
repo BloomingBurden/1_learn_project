@@ -81,11 +81,19 @@
       <section class="photo">
         <h2 class="title photo__title">Фотогалерея</h2>
         <div class="photo__image">
-          <img src="img/photo.jpg" alt="1-фотография" width="285" height="165">
+          <ul class="photo__list" data-popup>
+            <li class="photo__item"><img src="img/photo.jpg" alt="1-фотография" width="285" height="165"></li>
+            <li class="photo__item"><img src="img/photo.jpg" alt="2-фотография" width="285" height="165"></li>
+            <li class="photo__item"><img src="img/photo.jpg" alt="3-фотография" width="285" height="165"></li>
+            <li class="photo__item"><img src="img/photo.jpg" alt="4-фотография" width="285" height="165"></li>
+            <li class="photo__item"><img src="img/photo.jpg" alt="5-фотография" width="285" height="165"></li>
+            <li class="photo__item"><img src="img/photo.jpg" alt="6-фотография" width="285" height="165"></li>
+            <li class="photo__item"><img src="img/photo.jpg" alt="7-фотография" width="285" height="165"></li>
+          </ul>
         </div>
         <div class="photo__buttons">
-          <button class="button">Назад</button>
-          <button class="button">Вперед</button>
+          <button class="button" data-action="prev" disabled>Назад</button>
+          <button class="button" data-action="next">Вперед</button>
         </div>
       </section>
     </div>
@@ -173,6 +181,8 @@
       </p>
     </div>
   </footer>
+
+  <script src="js/index.js"></script>
 </body>
 
 </html>

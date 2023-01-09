@@ -287,8 +287,13 @@ a {
   margin: 0;
   margin-bottom: 40px;
 }
+
 .photo__image {
+  position: relative;
   margin: 0;
+  width: 288px;
+  height: 178px;
+  overflow: hidden;
 
   text-align: center;
     
@@ -296,10 +301,24 @@ a {
   border: 7px solid #ffffff;
 }
 
+.photo__list {
+  left: 0;
+  top: 0;
+  display: flex;
+  height: 100%;
+  width: 9999px;
+  transition: 1s;
+}
+
+.photo__item {
+  height: 100%;
+  width: 277px;
+}
+
 .photo__image img {
-  vertical-align: top;
-  height: 164px;
-  width: 286px;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 .photo__buttons {
@@ -311,6 +330,10 @@ a {
 }
 .photo__buttons .button {
   flex-grow: 1;
+}
+
+.button:disabled {
+  background-color: gray;
 }
 
 /* CONTACTS */
